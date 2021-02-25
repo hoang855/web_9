@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* div_header */
+#div_header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    transition: all 0.5s ease-out;
+    position: fixed;
+    color: white;
+    z-index: 9;
+}
+
+.icon_arrow{
+    margin-left: 5px;
+    transition: 1s ease-in-out;
+    font-size: 18px;
+    color: white;
+}
+
+.trangchu1_con:hover .icon_arrow{
+    transform: rotate(0.5turn);
+}
+
+#div_header:hover{
+    background-color: rgb(0 0 0 / 45%);
+}
+
+#logo{
+    width: 20%;
+    height: 100%;
+    transition: all 0.5s ease-out;
+}
+
+#logo img{
+    height: 85%;
+    padding: 5px 100px;
+}
+
+#logo___1{
+    display: none;
+}
+
+/* list */
+.div_list{
+    width: 100%;
+    height: 100%;
+}
+
+#list_trang_chu{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    line-height: 110px;
+    cursor: pointer;
+    font-family: 'Barlow', sans-serif;
+    transition: all 0.5s ease-out;
+}
+
+.trangchu1{
+    width: 15%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.trangchu1 a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    
+}
+
+.trangchu1 a::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 20px;
+}
+
+.trangchu1 a:hover::after{
+    width: 100%;
+}
+
+
+#Trang_1{
+    width: 20%;
+    background-color: rgb(0 0 0 / 45%);
+    position: absolute;
+    display: none;
+    top: 100px;
+   animation: aniName_1 0.3s ;
+   text-align: justify;
+   font-size: 18px;
+   color: rgb(255, 255, 255);
+   transition: all 0.5s ease-out;
+}
+
+#Trang_1 > p{
+    line-height: 0;
+    font-size: 15px;
+    transition: all 0.5s ease-out;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#Trang_1 > p:hover{
+    transform: scale(1.1);
+}
+
+@keyframes aniName_1 {
+    to { top: 80px 100px; opacity: 1;}
+    from { top: 100px; opacity: 1;}
+}
+
+.trangchu1_con:hover #Trang_1{
+    display: block;
+}
+
+.div_cart{
+    width: 22%;
+    height: 100%;
+    display: flex;
+}
+
+#cart_{
+    width: 20%;
+    height: 50%;
+    margin-top: 43px;
+    transition: all 0.5s ease-out;
+    display: flex;
+}
+
+.cart_1{
+    font-size: 22px;
+    padding-left: 25px;
+}
+
+#Trang_1 > ul{
+    background-color: rgb(#8395a7);
+    line-height: 50px;
+}
+
+#Trang_1 > ul li{
+    padding-left: 20px;
+}
+
+#Trang_1 > ul li:hover{
+    background-color: red;
+}
+
+#trang_2{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(0 0 0 / 45%);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    display: none;
+    animation: aniName_ 0.3s ;
+    transition: all 0.5s ease-out;
+}
+
+@keyframes aniName_ {
+    to { top: 80px 100px; opacity: 1;}
+    from { top: 120px; opacity: 0;}
+}
+
+.trangchu1_con:hover #trang_2{
+    display: block;
+}
+
+#trang_3{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(0 0 0 / 45%);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    display: none;
+    animation: aniName_1 0.3s ;
+    transition: all 0.5s ease-out;
+}
+
+@keyframes aniName_1 {
+    to { top: 80px 100px; opacity: 1;}
+    from { top: 120px; opacity: 0;}
+}
+
+.trangchu1_con:hover #trang_3{
+    display: block;
+}
+
+
+.trang_2_com{
+    width: 15%;
+    height: 100%;
+    margin: auto;
+}
+
+.container_2_{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.trang_2_com{
+    color: rgb(255, 255, 255);
+}
+
+.trang_2_com h6{
+    font-size: 15px;
+    line-height: 0;
+    padding-top: 45px;
+    padding-bottom: 30px;
+    text-align: initial;
+}
+
+.trang_2_com p{
+    line-height: 40px;
+    font-size: 14px;
+    transition: all 0.5s ease-out;
+    text-align: initial;
+    font-family: 'Oswald', sans-serif;
+}
+
+.trang_2_com  p:hover{
+    transform: scale(1.1);
+    color: rgb(255, 0, 0);
+}
+
+
+/* banner_img */
+
+#banner_img{
+    width: 100%;
+    height: 850px;
+    background-color: rosybrown;
+    overflow: hidden;
+    position: relative;
+    visibility:  visible;
+}
+
+#banner_img img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.img_anh{
+    animation: bien-mat-ben-trai 1s forwards;
+}
+
+/* @keyframes bien-mat-ben-trai{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(100%);
+    }
+    
+} */
+
+#main{
+    width: 100%;
+    height: 2000px;
+    background-color: #8395a7;
+    margin-top: 5px;
+}
+
+
+.main_product{
+    width: 100%;
+    height: 100%;
+}
+
+
+#thhhh{
+    display: none;
+}
